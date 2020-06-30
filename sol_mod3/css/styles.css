@@ -31,7 +31,7 @@ body{
 .fas{
   position: relative;
   bottom: 2px;
-  display: inline-block;
+  display: block;
   speak:none;
   font-family: 'Icons';
   font-style: normal;
@@ -67,25 +67,16 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	
-	
-	
 }
-li a{
-	display: block;
-	
 
-}
 
 .nav{
 	position: relative;
 	right: 0px;
-	max-width: 1000px;
-	min-width: 300px;
+	
 	text-align: center;
     box-sizing: border-box;
-
-
+    display: 30px 16px;
 }
 
 
@@ -94,7 +85,7 @@ li a{
 .dropdown {
   position: relative;
  
-  display: block;
+  display:block ;
   float: right;
  
 }
@@ -121,7 +112,29 @@ li a{
   border: 1px solid black;
 
 }
-
+.box{
+	background-color: grey;
+	margin: 40px;
+}
+#p1{
+	font-size: 30px;
+	font-color:black;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	background-color: grey;
+}
+#p2{
+	font-size: 16px;
+	font-color:black;
+	text-align: center;
+	background-color: grey;
+	padding: 10px;
+	margin-left: 10px;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	margin-top: 0px;
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: transparent;}
 
@@ -136,66 +149,38 @@ h1{
 	font-weight: bold;
 	font-size: 35px;
 }
-@media(min-width: 1200px){
+@media(min-width: 768px){
 	.fas{
-		display: ;
-	}
-	.fa-bars{
-		display: ;
-	}
-	.dropdown{
 		display:none;
 	}
-}
-@media(min-width: 768px)and(max-width: 1199px){
-	.fas{
-		 position: relative;
-         bottom: 2px;
-         margin: 5px;
-         border: 2px solid black;
-         border-radius: 6px;
-         padding: 5px;
-         font-size: 40px;
+	.fa-bars{
+		display:none;
+	}
+	.dropdown{
+		display:none ;
 	}
 }
-@media(max-width: 767px){
+/*@media(min-width: 992px)and(max-width: 1199px){
 	.fas{
-		 position: relative;
-         bottom: 2px;
-         margin: 5px;
-         border: 2px solid black;
-         border-radius: 6px;
-         padding: 5px;
-         font-size: 40px;
+		 display:none;
+         
+	}
+	.fa-bars{
+		display: none;
+	}
+	.dropdown{
+		display: none;
 	}
 }
-.box{
-	background-color: grey;
-	margin: 40px;
-}
-#p1{
-	font-size: 30px;
-	font-color:black;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 20px;
-	background-color: grey;
+@media(min-width: 768px)and(max-width: 991px){
+	.fas{
+		 display: none;
+	}
+	.fa-bars{
+		display: none;
+	}
+	.dropdown{
+		display: none;
+	}
+}*/
 
-	
-	
-
-}
-#p2{
-	font-size: 16px;
-	font-color:black;
-	text-align: center;
-	background-color: grey;
-	padding: 10px;
-	margin-left: 10px;
-	margin-left: 10px;
-	margin-bottom: 40px;
-	margin-top: 0px;
-
-	
-
-}
